@@ -1,0 +1,55 @@
+tpedrass@c1r1s4 ~ % cd desktop
+tpedrass@c1r1s4 desktop % cd shell00
+tpedrass@c1r1s4 shell00 % cd07
+zsh: command not found: cd07
+tpedrass@c1r1s4 shell00 % cd ex07
+tpedrass@c1r1s4 ex07 % ls
+a	sw.diff
+tpedrass@c1r1s4 ex07 % vim b
+tpedrass@c1r1s4 ex07 % diff b.txt a.txt
+diff: b.txt: No such file or directory
+diff: a.txt: No such file or directory
+tpedrass@c1r1s4 ex07 % diff b a
+1,18c1,9
+< 1,2c1,8
+< < STARWARS
+< < Episode IV, A NEW HOPE It is a period of civil war.
+< ---
+< > Episode V, A NEW H0PE It is a period of civil war
+< > Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.
+< > During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.
+< >
+< >
+< > Pursued by the Empire's sinister agents,
+< > Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..
+< >
+< 4,6d9
+< < Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.
+< < During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR,
+< < an armored space station with enough power to destroy an entire planet.
+< 8d10
+< < Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...
+---
+> STARWARS
+> Episode IV, A NEW HOPE It is a period of civil war.
+>
+> Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.
+> During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR,
+> an armored space station with enough power to destroy an entire planet.
+>
+> Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...
+>
+tpedrass@c1r1s4 ex07 % diff b a > b.patch
+tpedrass@c1r1s4 ex07 % patch b b.patch
+patching file b
+tpedrass@c1r1s4 ex07 % cat b
+STARWARS
+Episode IV, A NEW HOPE It is a period of civil war.
+
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR,
+an armored space station with enough power to destroy an entire planet.
+
+Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...
+
+tpedrass@c1r1s4 ex07 %
