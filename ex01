@@ -1,0 +1,21 @@
+tpedrass@c1r1s4 ~ % cd desktop
+tpedrass@c1r1s4 desktop % cd shell00
+tpedrass@c1r1s4 shell00 % cd ex01
+tpedrass@c1r1s4 ex01 % touch testShell00
+tpedrass@c1r1s4 ex01 % ls -l
+total 0
+-rw-r--r--  1 tpedrass  2022_lisboa  0 Jan 16 12:52 testShell00
+tpedrass@c1r1s4 ex01 % chmod 455 testShell00
+tpedrass@c1r1s4 ex01 % ls -l
+total 0
+-r--r-xr-x  1 tpedrass  2022_lisboa  0 Jan 16 12:52 testShell00
+tpedrass@c1r1s4 ex01 % touch -t 202106012342 testShell00
+tpedrass@c1r1s4 ex01 % ls -l
+total 0
+-r--r-xr-x  1 tpedrass  2022_lisboa  0 Jun  1  2021 testShell00
+tpedrass@c1r1s4 ex01 % tar -cf testShell00.tar testShell00
+tpedrass@c1r1s4 ex01 % ls -l
+total 8
+-r--r-xr-x  1 tpedrass  2022_lisboa     0 Jun  1  2021 testShell00
+-rw-r--r--  1 tpedrass  2022_lisboa  1536 Jan 16 12:55 testShell00.tar
+tpedrass@c1r1s4 ex01 %
